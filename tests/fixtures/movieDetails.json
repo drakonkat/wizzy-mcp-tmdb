@@ -1,0 +1,10 @@
+{
+  "id": 123,
+  "title": "Test Movie",
+  "overview": "A detailed test movie overview.",
+  "release_date": "2023-01-01",
+  "genres": [{"id": 28, "name": "Action"}],
+  "runtime": 120,
+  "vote_average": 7.2,
+  "popularity": 8.5
+}

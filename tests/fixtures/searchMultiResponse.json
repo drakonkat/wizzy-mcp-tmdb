@@ -1,0 +1,27 @@
+{
+  "page": 1,
+  "total_pages": 10,
+  "total_results": 100,
+  "results": [
+    {
+      "id": 123,
+      "media_type": "movie",
+      "title": "Test Movie",
+      "release_date": "2023-01-01",
+      "original_language": "en",
+      "popularity": 8.5,
+      "vote_average": 7.2,
+      "overview": "A test movie overview."
+    },
+    {
+      "id": 456,
+      "media_type": "tv",
+      "name": "Test TV Show",
+      "first_air_date": "2022-05-15",
+      "original_language": "en",
+      "popularity": 9.0,
+      "vote_average": 8.1,
+      "overview": "A test TV show overview."
+    }
+  ]
+}

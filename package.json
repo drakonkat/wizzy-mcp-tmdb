@@ -1,0 +1,59 @@
+{
+  "name": "wizzy-mcp-tmdb",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP server in JavaScript exposing tools to search TMDB.",
+  "main": "mcp-tmdb-server.js",
+  "exports": {
+    "./server": "./mcp-tmdb-server.js"
+  },
+  "files": [
+    "mcp-tmdb-server.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "mcp",
+    "tmdb",
+    "api",
+    "movies",
+    "tv",
+    "database"
+  ],
+  "author": "Mauro Mazzocchetti <adamo.mazzocchetti@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drakonkat/wizzy-mcp-tmdb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/drakonkat/wizzy-mcp-tmdb/issues"
+  },
+  "homepage": "https://github.com/drakonkat/wizzy-mcp-tmdb#readme",
+  "scripts": {
+    "start": "node mcp-tmdb-server.js",
+    "start:tmdb": "node mcp-tmdb-server.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "babel-jest": "^30.2.0",
+    "jest": "^30.2.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(@modelcontextprotocol)/)"
+    ]
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
