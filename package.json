@@ -1,6 +1,6 @@
 {
   "name": "wizzy-mcp-tmdb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "MCP server in JavaScript exposing tools to search TMDB.",
   "main": "mcp-tmdb-server.js",
@@ -24,7 +24,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/drakonkat/wizzy-mcp-tmdb.git"
+    "url": "git+https://github.com/drakonkat/wizzy-mcp-tmdb.git"
   },
   "bugs": {
     "url": "https://github.com/drakonkat/wizzy-mcp-tmdb/issues"
