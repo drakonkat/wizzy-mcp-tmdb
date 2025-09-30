@@ -1,6 +1,6 @@
 {
   "name": "wizzy-mcp-tmdb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "MCP server in JavaScript exposing tools to search TMDB.",
   "main": "mcp-tmdb-server.js",
