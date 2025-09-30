@@ -111,6 +111,39 @@ Here are code snippets showing how to integrate with the MCP tools:
 }
 ```
 
+## MCP Client Integration
+
+Per integrare questo MCP server nel tuo client MCP (come un IDE o un client di chat compatibile), segui questi passi:
+
+1. Installa il pacchetto npm se necessario:
+
+   ```bash
+   npm install -g wizzy-mcp-tmdb
+   ```
+
+2. Crea o aggiorna il file `mcp.json` nel tuo client MCP con la seguente configurazione:
+
+   ```json
+   {
+     "mcpServers": {
+       "tmdb": {
+         "command": "npx",
+         "args": ["wizzy-mcp-tmdb"],
+         "env": {
+           "TMDB_AUTH_TOKEN": "YOUR_TNL_PROXY_BEARER_TOKEN"
+         },
+         "alwaysAllow": [
+           "get_watch_providers",
+           "discover_tv",
+           "discover_by_provider"
+         ]
+       }
+     }
+   }
+   ```
+
+   Nota: Il `TMDB_AUTH_TOKEN` può essere impostato a un valore casuale per ora, poiché le chiamate API TMDB sono gratuite e non richiedono autenticazione obbligatoria.
+
 ## Testing Strategy
 
 The project uses Jest for comprehensive testing, including:
